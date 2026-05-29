@@ -1,30 +1,69 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/2qxJx55E)
 
-![](http://images.restapi.co.za/pvt/Noroff-64.png)
-# Noroff
-# Back-end Development Year 2
-### Exam Project 2
+# 🏥 Doctor Appointment Booking System
 
-This repository does not have any startup code. Use the 2 folders
-- Backend
-- Frontend
+A full-stack web application for managing doctor appointments, built with ASP.NET Core (.NET 10) and React. This system allows patients to register, search for doctors, and book appointments at various clinics.
 
-for your respective applications.
+> **Note:** This project is currently a work in progress and under active development.
 
+## ✨ Features
 
-Instruction for the course assignment is in the LMS (Moodle) system of Noroff.
-[https://lms.noroff.no](https://lms.noroff.no)
+### Implemented
+- ✅ **User Authentication & Authorization**
+  - Patient registration and login with JWT authentication
+  - Secure password hashing with BCrypt
+  - Token-based session management
 
-![](http://images.restapi.co.za/pvt/ca_important.png)
+- ✅ **Doctor Management**
+  - Browse and search doctors by speciality and clinic
+  - View doctor details and availability
+  - CRUD operations for doctor records
 
-You will not be able to make any submissions after the course assignment deadline. Make sure to make all your commit **BEFORE** the deadline to this repository.
+- ✅ **Appointment System**
+  - Create, update, and cancel appointments
+  - Appointment status tracking (Scheduled, Completed, Cancelled)
+  - Time slot management
+  - Patient-Doctor-Clinic relationship tracking
 
-![](http://images.restapi.co.za/pvt/help.png)
+- ✅ **Database Schema**
+  - Patients with comprehensive profile information
+  - Doctors with specialities and clinic affiliations
+  - Clinics and medical categories
+  - Relational data integrity with Entity Framework Core
 
-If you need help with any instructions for the course assignment, contact your teacher on **Microsoft Teams**.
+### Planned Enhancements
+- 🔄 Frontend UI implementation with React
+- 🔄 Real-time appointment notifications
+- 🔄 Doctor availability calendar
+- 🔄 Patient medical history tracking
+- 🔄 Admin dashboard for clinic management
+- 🔄 Email notifications for appointment confirmations
 
-**REMEMBER** Your Moodle LMS submission must have your repository link **AND** your Github username in the text file.
+## 🛠️ Tech Stack
 
-### ENDPOINTS
+### Backend
+- **Framework:** ASP.NET Core 10.0 (Web API)
+- **Database:** MySQL with Entity Framework Core 10.0
+- **Authentication:** JWT Bearer Token
+- **Password Security:** BCrypt.Net
+- **Environment Management:** DotNetEnv
+- **API Documentation:** OpenAPI (Swagger)
 
-### REFERENCES
+### Frontend
+- **Framework:** React 19.2
+- **Build Tool:** Vite 8.0
+- **Language:** JavaScript (ES6+)
+- **Linter:** ESLint 10.0
+
+## 📋 Prerequisites
+
+- [.NET 10 SDK](https://dotnet.microsoft.com/download)
+- [Node.js](https://nodejs.org/) (v18 or higher)
+- [MySQL Server](https://dev.mysql.com/downloads/mysql/) (v8.0 or higher)
+- A code editor (VS Code, Visual Studio, etc.)
+
+## 🚀 Installation & Setup
+
+### 1. Clone the Repository
+```bash
+git clone <your-repository-url>
+cd Doctor_appointment_app
