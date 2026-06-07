@@ -7,6 +7,7 @@ public class CreateAppointmentDto
     public string? LastName { get; set; }
     public string? Email { get; set; }
     public string? Phone { get; set; }
+    public DateOnly? Birthdate { get; set; }
 
     public int? PatientId { get; set; }
 
@@ -15,5 +16,6 @@ public class CreateAppointmentDto
     public int CategoryId { get; set; }
     public DateTime AppointmentDate { get; set; }
     public TimeSpan TimeSlot { get; set; }
+    public int DurationMinutes { get; set; }
     public string? Notes { get; set; }
 }

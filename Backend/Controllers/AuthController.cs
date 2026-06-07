@@ -21,7 +21,7 @@ public class AuthController : ControllerBase
     [HttpPost("register")]
     public async Task<ActionResult<AuthResponseDto>> Register(RegisterDto dto)
     {
-        if (await _context.Patients.AnyAsync(p => p.Email == dto.Email && p.IsRegistered))
+        if (await _context.Patients.AnyAsync(p => p.Email == dto.Email))
             return BadRequest("Email already registered");
         
         var passwordHash = BCrypt.Net.BCrypt.HashPassword(dto.Password);

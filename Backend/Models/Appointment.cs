@@ -11,6 +11,7 @@ public class Appointment
     // Appointment details
     public DateTime AppointmentDate { get; set; }
     public TimeSpan TimeSlot { get; set; }
+    public int DurationMinutes { get; set; }
     public string Status { get; set; } = "Scheduled";
     public string? Notes { get; set; }
 

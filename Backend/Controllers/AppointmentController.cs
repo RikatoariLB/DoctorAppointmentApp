@@ -45,6 +45,7 @@ public class AppointmentsController : ControllerBase
                 LastName = dto.LastName!,
                 Email = dto.Email!,
                 Phone = dto.Phone!,
+                Birthdate = dto.Birthdate.HasValue ? dto.Birthdate.Value.ToDateTime(TimeOnly.MinValue) : null,
                 IsRegistered = false
             };
             _context.Patients.Add(guestPatient);
@@ -70,6 +71,7 @@ public class AppointmentsController : ControllerBase
             CategoryId = dto.CategoryId,
             AppointmentDate = dto.AppointmentDate,
             TimeSlot = dto.TimeSlot,
+            DurationMinutes = dto.DurationMinutes,
             Notes = dto.Notes,
             Status = "Scheduled"
         };
